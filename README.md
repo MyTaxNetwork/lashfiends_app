@@ -1,0 +1,2 @@
+# lashfiends_app
+project

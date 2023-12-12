@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>Clinique</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css" id="color-switcher-link">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<div class="widget widget_search">
+			<form method="get" class="searchform form-inline" action="/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			<section class="ls page_toplogo table_section table_section_md columns_padding_0">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-6 text-center text-md-left">
+							<span class="small-text">follow with us:</span>
+							<div class="page_social_icons inline-block">
+								<a class="social-icon soc-facebook theme-icon" href="#" title="Facebook"></a>
+								<a class="social-icon soc-twitter theme-icon" href="#" title="Twitter"></a>
+								<a class="social-icon soc-google theme-icon" href="#" title="Google"></a>
+								<a class="social-icon soc-youtube theme-icon" href="#" title="Youtube"></a>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 text-center text-md-right col-md-push-4">
+							<ul class="inline-dropdown inline-block">
+
+								<li class="dropdown login-dropdown">
+
+									<span class="small-text">My account</span>
+									<a class="topline-button" id="login" data-target="#" href="./" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+										<i class="rt-icon2-media-play"></i>
+									</a>
+
+									<div class="dropdown-menu" aria-labelledby="login">
+										<ul class="greylinks no-bullets">
+											<li>
+												<a href="#">
+													<span class="top-button top-button-sign-in"></span>
+													<span class="small-text">sign in</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="top-button top-button-sign-up"></span>
+													<span class="small-text">sign up</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+
+								</li>
+								<li class="dropdown cart-dropdown">
+
+									<a class="topline-button" id="cart" data-target="#" href="./" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+										<span class="top-button top-button-cart"></span>
+										<span class="total highlight2 lusitana-bold-up fontsize_18">$
+											<span class="amount">1975,00</span>
+										</span>
+									</a>
+
+								</li>
+								<li class="dropdown search-dropdown">
+									<a class="topline-button" id="search" data-target="#" href="./" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+										<span class="top-button top-button-search"></span>
+									</a>
+									<div class="dropdown-menu" aria-labelledby="login">
+										<form method="get" class="searchform form-inline bold-placeholder" action="/">
+											<div class="form-group">
+												<label class="sr-only" for="search-input">Search for:</label>
+												<input id="search-input" type="text" value="" name="search" class="form-control" placeholder="Search to site">
+											</div>
+											<button type="submit" class="topline-button">
+												<span class="top-button top-button-search"></span>
+												<span class="sr-only">Search</span>
+											</button>
+										</form>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-md-4 col-sm-12 text-center col-md-pull-4">
+							<a href="./" class="logo">
+								<img src="images/logo.png" alt="" class="main_bg_color">
+								<h1>Clinique</h1>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<header class="page_header header_bg_image fullwidth_menu columns_padding_0 section_padding_top_60">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<!-- main nav start -->
+							<nav class="mainmenu_wrapper">
+								<ul class="mainmenu nav sf-menu">
+									<li class="active">
+										<a href="index.html">Main page</a>
+									</li>
+
+									<li>
+										<a href="appointment.html">Pages</a>
+										<ul>
+											<!-- features -->
+											<li>
+												<a href="shortcodes_teasers.html">Shortcodes&amp;Widgets</a>
+												<ul>
+
+													<li>
+														<a href="shortcodes_teasers.html">Teasers</a>
+													</li>
+													<li>
+														<a href="shortcodes_buttons.html">Buttons</a>
+													</li>
+													<li>
+														<a href="shortcodes_progress.html">Progress</a>
+													</li>
+													<li>
+														<a href="shortcodes_pricing.html">Pricing</a>
+													</li>
+													<li>
+														<a href="shortcodes_socialicons.html">Social Icons</a>
+													</li>
+													<li>
+														<a href="shortcodes_tabs.html">Tabs &amp; Collapse</a>
+													</li>
+													<li>
+														<a href="shortcodes_bootstrap.html">Bootstrap Elements</a>
+													</li>
+													<li>
+														<a href="shortcodes_typography.html">Typography</a>
+													</li>
+													<li>
+														<a href="shortcodes_widgets.html">Widgets</a>
+													</li>
+													<li>
+														<a href="shortcodes_animation.html">Animation</a>
+													</li>
+													<li>
+														<a href="shortcodes_icons.html">Template Icons</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof features -->
+
+											<!-- header -->
+											<li>
+												<a href="header1.html">Headers</a>
+												<ul>
+													<li>
+														<a href="header1.html">Header 1</a>
+													</li>
+													<li>
+														<a href="header2.html">Header 2</a>
+													</li>
+													<li>
+														<a href="header3.html">Header 3</a>
+													</li>
+													<li>
+														<a href="header4.html">Header 4</a>
+													</li>
+													<li>
+														<a href="header5.html">Header 5</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof header -->
+
+											<!-- breadcrumbs -->
+											<li>
+												<a href="breadcrumbs1.html">Breadcrumbs</a>
+												<ul>
+													<li>
+														<a href="breadcrumbs1.html">Breadcrumbs 1</a>
+													</li>
+													<li>
+														<a href="breadcrumbs2.html">Breadcrumbs 2</a>
+													</li>
+													<li>
+														<a href="breadcrumbs3.html">Breadcrumbs 3</a>
+													</li>
+													<li>
+														<a href="breadcrumbs4.html">Breadcrumbs 4</a>
+													</li>
+													<li>
+														<a href="breadcrumbs5.html">Breadcrumbs 5</a>
+													</li>
+													<li>
+														<a href="breadcrumbs6.html">Breadcrumbs 6</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof breadcrumbs -->
+
+											<!-- footer -->
+											<li>
+												<a href="footer1.html">Footer</a>
+												<ul>
+													<li>
+														<a href="footer1.html">Footer 1</a>
+													</li>
+													<li>
+														<a href="footer2.html">Footer 2</a>
+													</li>
+													<li>
+														<a href="footer3.html">Footer 3</a>
+													</li>
+													<li>
+														<a href="footer4.html">Footer 4</a>
+													</li>
+													<li>
+														<a href="footer5.html">Footer 5</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof footer -->
+
+											<!-- copyright -->
+											<li>
+												<a href="copyright1.html">Copyright</a>
+												<ul>
+													<li>
+														<a href="copyright1.html">Copyright 1</a>
+													</li>
+													<li>
+														<a href="copyright2.html">Copyright 2</a>
+													</li>
+													<li>
+														<a href="copyright3.html">Copyright 3</a>
+													</li>
+													<li>
+														<a href="copyright4.html">Copyright 4</a>
+													</li>
+													<li>
+														<a href="copyright5.html">Copyright 5</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof copyright -->
+
+											<li>
+												<a href="appointment.html">Appointment</a>
+											</li>
+
+											<li>
+												<a href="calculator.html">Calculator</a>
+											</li>
+
+											<li>
+												<a href="comingsoon1.html">Comingsoon</a>
+												<ul>
+													<li>
+														<a href="comingsoon1.html">Comingsoon</a>
+													</li>
+													<li>
+														<a href="comingsoon2.html">Comingsoon 2</a>
+													</li>
+												</ul>
+											</li>
+
+											<li>
+												<a href="timetable.html">Timetable</a>
+											</li>
+											<li>
+												<a href="faq.html">FAQ</a>
+												<ul>
+													<li>
+														<a href="faq.html">FAQ</a>
+													</li>
+													<li>
+														<a href="faq2.html">FAQ 2</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="404.html">404</a>
+											</li>
+
+										</ul>
+									</li>
+									<!-- eof pages -->
+
+									<!-- about -->
+									<li>
+										<a href="director.html">About us</a>
+										<ul>
+											<li>
+												<a href="director.html">Director &amp; owner</a>
+											</li>
+											<li>
+												<a href="team.html">Our team</a>
+											</li>
+											<li>
+												<a href="team_member.html">Team member profile</a>
+											</li>
+											<li>
+												<a href="wellness.html">Wellness luxury spa resort</a>
+											</li>
+										</ul>
+									</li>
+									<!-- eof about -->
+
+									<!-- services -->
+									<li>
+										<a href="services.html">Services</a>
+										<ul>
+											<li>
+												<a href="services.html">Medical spa</a>
+											</li>
+											<li>
+												<a href="services.html">Cosmetic bar</a>
+											</li>
+											<li>
+												<a href="services.html">Hair studio</a>
+											</li>
+											<li>
+												<a href="services.html">Teeth whitening</a>
+											</li>
+											<li>
+												<a href="services.html">Spa revive</a>
+											</li>
+											<li>
+												<a href="services.html">Special Occasions</a>
+											</li>
+										</ul>
+									</li>
+									<!-- eof services -->
+
+									<!-- gallery -->
+									<li>
+										<a href="gallery-regular.html">Lookbook</a>
+										<ul>
+											<!-- Gallery regular -->
+											<li>
+												<a href="gallery-regular.html">Grid</a>
+												<ul>
+													<li>
+														<a href="gallery-regular.html">1 column</a>
+													</li>
+													<li>
+														<a href="gallery-regular-2-cols.html">2 columns</a>
+													</li>
+													<li>
+														<a href="gallery-regular-3-cols.html">3 columns</a>
+													</li>
+													<li>
+														<a href="gallery-regular-4-cols.html">4 columns</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof Gallery regular -->
+
+											<!-- Gallery full width -->
+											<li>
+												<a href="gallery-fullwidth.html">Gobbles</a>
+												<ul>
+													<li>
+														<a href="gallery-fullwidth.html">2 column</a>
+													</li>
+													<li>
+														<a href="gallery-fullwidth-3-cols.html">3 columns</a>
+													</li>
+													<li>
+														<a href="gallery-fullwidth-4-cols.html">4 columns</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof Gallery full width -->
+
+											<!-- Gallery extended -->
+											<li>
+												<a href="gallery-extended.html">Masonry</a>
+												<ul>
+													<li>
+														<a href="gallery-extended.html">1 column</a>
+													</li>
+													<li>
+														<a href="gallery-extended-2-cols.html">2 columns</a>
+													</li>
+													<li>
+														<a href="gallery-extended-3-cols.html">3 columns</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof Gallery extended -->
+
+											<!-- Gallery carousel -->
+											<li>
+												<a href="gallery-carousel.html">Carousel</a>
+												<ul>
+													<li>
+														<a href="gallery-carousel.html">1 column</a>
+													</li>
+													<li>
+														<a href="gallery-carousel-2-cols.html">2 columns</a>
+													</li>
+													<li>
+														<a href="gallery-carousel-3-cols.html">3 columns</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof Gallery carousel -->
+
+											<!-- Gallery tile -->
+											<li>
+												<a href="gallery-tile.html">Tile</a>
+											</li>
+											<!-- eof Gallery tile -->
+
+											<!-- Gallery left sidebar -->
+											<li>
+												<a href="gallery-left.html">Left Sidebar</a>
+												<ul>
+													<li>
+														<a href="gallery-left.html">1 column</a>
+													</li>
+													<li>
+														<a href="gallery-left-2-cols.html">2 columns</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof Gallery left sidebar -->
+
+											<!-- Gallery right sidebar -->
+											<li>
+												<a href="gallery-right.html">Right Sidebar</a>
+												<ul>
+													<li>
+														<a href="gallery-right.html">1 column</a>
+													</li>
+													<li>
+														<a href="gallery-right-2-cols.html">2 columns</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof Gallery right sidebar -->
+
+											<!-- Gallery item -->
+											<li>
+												<a href="gallery-single.html">Item</a>
+											</li>
+											<!-- eof Gallery item -->
+										</ul>
+									</li>
+									<!-- eof Gallery -->
+
+									<!-- blog -->
+									<li>
+										<a href="blog-right.html">Our blog</a>
+										<ul>
+
+											<li>
+												<a href="blog-right.html">Right Sidebar</a>
+											</li>
+											<li>
+												<a href="blog-left.html">Left Sidebar</a>
+											</li>
+											<li>
+												<a href="blog-full.html">No Sidebar</a>
+											</li>
+
+											<li>
+												<a href="blog-single-right.html">Post</a>
+												<ul>
+													<li>
+														<a href="blog-single-right.html">Right Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-left.html">Left Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-full.html">No Sidebar</a>
+													</li>
+												</ul>
+											</li>
+
+											<li>
+												<a href="blog-single-video-right.html">Video Post</a>
+												<ul>
+													<li>
+														<a href="blog-single-video-right.html">Right Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-video-left.html">Left Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-video-full.html">No Sidebar</a>
+													</li>
+												</ul>
+											</li>
+
+										</ul>
+									</li>
+									<!-- eof blog -->
+
+									<!-- contacts -->
+									<li>
+										<a href="contact.html">Contact</a>
+										<ul>
+											<li>
+												<a href="contact.html">Contact 1</a>
+											</li>
+											<li>
+												<a href="contact2.html">Contact 2</a>
+											</li>
+											<li>
+												<a href="contact3.html">Contact 3</a>
+											</li>
+										</ul>
+									</li>
+									<!-- eof contacts -->
+
+									<!-- shop -->
+									<li>
+										<a href="shop.html">Shop</a>
+										<ul>
+											<li>
+												<a href="shop.html">Shop</a>
+											</li>
+											<li>
+												<a href="product-right.html">Single Product</a>
+											</li>
+											<li>
+												<a href="cart-right.html">Shopping Cart</a>
+											</li>
+											<li>
+												<a href="checkout-right.html">Checkout</a>
+											</li>
+											<li>
+												<a href="register.html">Registration</a>
+											</li>
+										</ul>
+									</li>
+									<!-- eof shop -->
+
+								</ul>
+							</nav>
+							<!-- eof main nav -->
+							<span class="toggle_menu">
+								<span></span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<section class="intro_section page_mainslider ds">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<img src="images/slide01.jpg" alt="">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="slide_description_wrapper text-right">
+											<div class="slide_description text-center">
+												<div class="intro-layer" data-animation="slideExpandUp">
+													<p class="text-uppercase fontsize_14 bold letter-spacing-033 bottommargin_15">
+														look and feel your best
+													</p>
+													<h2 class="margin_0">welcome to the</h2>
+													<h1 class="topmargin_0">clinique</h1>
+												</div>
+												<div class="intro-layer" data-animation="slideExpandUp">
+													<p class="text-uppercase fontsize_14 bold letter-spacing-033">
+														The art and science of pure flower and plant essences
+													</p>
+												</div>
+											</div>
+											<!-- eof .slide_description -->
+										</div>
+										<!-- eof .slide_description_wrapper -->
+									</div>
+									<!-- eof .col-* -->
+								</div>
+								<!-- eof .row -->
+							</div>
+							<!-- eof .container -->
+						</li>
+
+						<li>
+							<img src="images/slide01.jpg" alt="">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="slide_description_wrapper text-right">
+											<div class="slide_description text-center">
+												<div class="intro-layer" data-animation="slideExpandUp">
+													<p class="text-uppercase fontsize_14 bold letter-spacing-033 bottommargin_15">
+														look and feel your best
+													</p>
+													<h2 class="margin_0">welcome to the</h2>
+													<h1 class="topmargin_0">clinique</h1>
+												</div>
+												<div class="intro-layer" data-animation="slideExpandUp">
+													<p class="text-uppercase fontsize_14 bold letter-spacing-033">
+														The art and science of pure flower and plant essences
+													</p>
+												</div>
+											</div>
+											<!-- eof .slide_description -->
+										</div>
+										<!-- eof .slide_description_wrapper -->
+									</div>
+									<!-- eof .col-* -->
+								</div>
+								<!-- eof .row -->
+							</div>
+							<!-- eof .container -->
+						</li>
+
+
+					</ul>
+				</div>
+				<!-- eof flexslider -->
+			</section>
+
+			<div class="contacts-section-container">
+				<section class="cs section_padding_45 contacts-section">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4 teaser">
+								<div class="media">
+									<div class="media-left media-middle">
+										<div class="border_icon size_small round">
+											<i class="rt-icon2-location highlight2"></i>
+										</div>
+									</div>
+									<div class="media-body lineheight_1 media-middle">
+										<span class="lusitana-bold-up fontsize_14">Livingstone, Season Street
+											<span class="fontsize_18 highlight2">45/2</span>
+										</span>
+										<br>
+										<span class="lusitana-bold-up fontsize_14">Los angeles,
+											<span class="highlight2">Inc -
+												<span class="fontsize_18">4502</span>
+											</span>
+										</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 teaser">
+								<div class="media">
+									<div class="media-left media-middle">
+										<div class="border_icon size_small round">
+											<i class="rt-icon2-tablet3 highlight2"></i>
+										</div>
+									</div>
+									<div class="media-body lineheight_1 media-middle">
+										<span class="lusitana-bold-up fontsize_14">call to make an appontment</span>
+										<br>
+										<span class="lusitana-bold-up fontsize_18 highlight2">1 (800) 300 2214</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 teaser">
+								<div class="media">
+									<div class="media-left media-middle">
+										<div class="border_icon size_small round">
+											<i class="rt-icon2-clock2 highlight2 fontsize_16"></i>
+										</div>
+									</div>
+									<div class="media-body lineheight_1 media-middle">
+										<span class="lusitana-bold-up fontsize_14">Tuesday - Sunday
+											<span class="highlight2">
+												<span class="fontsize_18">9.00</span> am -
+												<span class="fontsize_18">7.00</span> pm</span>
+										</span>
+										<br>
+										<span class="lusitana-bold-up fontsize_14">Saturday &amp; Monday
+											<span class="highlight2">Closed</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<section class="ls section_padding_100 director">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-md-4">
+							<p class="fontsize_14 text-uppercase bold letter-spacing-033 grey bottommargin_10">estd
+								<span class="logo-icon icon-small"></span> 1987</p>
+							<h3 class="highlight topmargin_0 bottommargin_15">
+								The Infinity of Beauty &amp; Indulgence
+							</h3>
+							<p class="bottommargin_0">
+								But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of
+								selection.
+							</p>
+						</div>
+						<div class="col-lg-5 col-md-5 text-center">
+							<div class="founding-date-cont">
+								<img src="images/director.png" alt="">
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-3 text-center text-md-left">
+							<p class="fontsize_14 bold text-uppercase grey margin_0">director &amp; owner</p>
+							<h3 class="highlight topmargin_10">Lori
+								<br> Foster</h3>
+							<hr class="inline-block">
+							<br>
+							<div class="signature"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls ms section_padding_50 banners texture_bg">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9 col-md-12">
+							<div class="banner big-banner with_backing left_backing with_background with_padding">
+								<div class="row display_table_sm">
+									<div class="col-md-5 display_table_cell_sm text-center">
+										<div class="item-media entry-thumbnail">
+											<img src="images/banner-big.jpg" alt="">
+										</div>
+									</div>
+									<div class="col-md-7 text-center display_table_cell_sm">
+										<div class="item-content">
+											<p class="fontsize_14 bold letter-spacing-033 text-uppercase highlight3">gift certificate</p>
+											<hr class="divider-size_2_30">
+											<h3 class="highlight">This friday
+												<br> only 20% off
+												<br> deep massage</h3>
+											<h6 class="theme-block with_padding topmargin_50 bottommargin_50">use a change to take advantage of this offer!</h6>
+											<a href="appointment.html" class="theme_button color3 big_button">Request an appointment</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-offset-0 col-lg-3 col-md-offset-2 col-md-8">
+							<div class="banner with_border thick_border with_padding with_background">
+								<div class="row">
+									<div class="vertical-item content-absolute small-banner col-xs-12 col-sm-6 col-lg-12">
+										<div class="item-media">
+											<img src="images/banner-small02.jpg" alt="">
+										</div>
+										<div class="item-content with_background text-center">
+											<h6>
+												Be beautiful. Feel good about it
+											</h6>
+											<a href="blog-right.html" class="theme_button color2 block_button">Our blog</a>
+										</div>
+									</div>
+									<div class="clearfix hidden-md hidden-sm"></div>
+									<hr class="divider-size_1_70 divider_30 hidden-md hidden-sm">
+									<div class="vertical-item content-absolute small-banner col-xs-12 col-sm-6 col-lg-12">
+										<div class="item-media">
+											<img src="images/banner-small01.jpg" alt="">
+										</div>
+										<div class="item-content with_background text-center">
+											<h6>
+												Your beauty is our profession
+											</h6>
+											<a href="shop.html" class="theme_button color4 block_button">Shop now</a>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls section_padding_top_100 section_padding_bottom_75 services">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h3 class="highlight margin_0">Procedures &amp; treatments</h3>
+							<hr class="divider-size_2_30 divider_25">
+							<p class="text-uppercase bold fontsize_14 letter-spacing-033 grey topmargin_-5 bottommargin_10">No longer beyond your budget</p>
+						</div>
+					</div>
+					<div class="row bottommargin_10">
+						<div class="col-md-4 col-lg-3">
+							<ul class="list1 no-bullets theme-block services-list">
+								<li>
+									<a href="services.html">
+										<span class="service-icon service-medical"></span>
+										<h6 class="inline-block margin_0">medical spa</h6>
+										<i class="fa fa-chevron-right lightgrey"></i>
+									</a>
+								</li>
+								<li>
+									<a href="services.html">
+										<span class="service-icon service-cosmetic"></span>
+										<h6 class="inline-block margin_0">Cosmetic bar</h6>
+										<i class="fa fa-chevron-right lightgrey"></i>
+									</a>
+								</li>
+								<li>
+									<a href="services.html">
+										<span class="service-icon service-hair"></span>
+										<h6 class="inline-block margin_0">Hair studio</h6>
+										<i class="fa fa-chevron-right lightgrey"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4 col-lg-6 text-center">
+							<div class="services-media">
+								<img src="images/services.png" alt="">
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-3">
+							<ul class="list1 no-bullets theme-block services-list">
+								<li>
+									<a href="services.html">
+										<span class="service-icon service-medical"></span>
+										<h6 class="inline-block margin_0">medical spa</h6>
+										<i class="fa fa-chevron-right lightgrey"></i>
+									</a>
+								</li>
+								<li>
+									<a href="services.html">
+										<span class="service-icon service-cosmetic"></span>
+										<h6 class="inline-block margin_0">Cosmetic bar</h6>
+										<i class="fa fa-chevron-right lightgrey"></i>
+									</a>
+								</li>
+								<li>
+									<a href="services.html">
+										<span class="service-icon service-hair"></span>
+										<h6 class="inline-block margin_0">Hair studio</h6>
+										<i class="fa fa-chevron-right lightgrey"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls section_padding_50 texture_bg lookbook">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-0 col-lg-3 text-center">
+							<div class="with_padding theme_background lookbook-small">
+								<div class="with_border thick_border columns_padding_0">
+									<div class="row margin_0">
+										<div class="col-sm-4 col-lg-12">
+											<div class="with_padding">
+												<div class="lusitana-bold-up fontsize_56 lineheight_1 highlight">15</div>
+												<h6 class="margin_0">years of experience</h6>
+											</div>
+										</div>
+										<div class="clearfix hidden-md hidden-sm"></div>
+										<hr class="divider-size_1_70 divider_0 hidden-md hidden-sm">
+										<div class="col-sm-4 col-lg-12">
+											<div class="with_padding">
+												<div class="lusitana-bold-up fontsize_56 lineheight_1 highlight">32</div>
+												<h6 class="margin_0">members in team</h6>
+											</div>
+										</div>
+										<div class="clearfix hidden-md hidden-sm"></div>
+										<hr class="hidden-md hidden-sm divider_0">
+										<div class="col-sm-4 col-lg-12">
+											<div class="with_padding with_background">
+												<div class="lusitana-bold-up fontsize_56 lineheight_1 highlight4">75</div>
+												<h6 class="margin_0">professional procedures</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="clearfix hidden-lg "></div>
+
+						<div class="col-lg-9">
+							<div class="with_backing theme_background lookbook-big columns_padding_0">
+								<div class="row margin_0">
+									<div class="col-sm-4">
+										<div class="vertical-item with_background with_padding">
+											<div class="item-media text-center">
+												<img src="images/lookbook01.jpg" alt="">
+											</div>
+											<div class="item-content text-center">
+												<p class="letter-spacing-033 small-text lineheight_1 highlight4">Relaxation</p>
+												<h3 class="highlight">beauty
+													<br> center</h3>
+												<hr class="divider-size_2_30 divider_25 highlight4">
+												<p>
+													On the hand, we denounce with righteous indignation and dislike men whoare
+												</p>
+												<hr>
+												<a href="services.html" class="theme_button wide_button color4">View details</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-sm-4">
+										<div class="vertical-item muted_background with_padding">
+											<div class="item-media text-center">
+												<img src="images/lookbook02.jpg" alt="">
+											</div>
+											<div class="item-content text-center">
+												<p class="letter-spacing-033 small-text lineheight_1 highlight3">refreshing</p>
+												<h3 class="highlight">Hair
+													<br> salon</h3>
+												<hr class="divider-size_2_30 divider_25 highlight3">
+												<p>
+													He rejects pleasures to secure other greater pleasures or else endures pains to avoid
+												</p>
+												<hr>
+												<a href="services.html" class="theme_button wide_button color3">View details</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-sm-4">
+										<div class="vertical-item with_background with_padding">
+											<div class="item-media text-center">
+												<img src="images/lookbook03.jpg" alt="">
+											</div>
+											<div class="item-content text-center">
+												<p class="letter-spacing-033 small-text lineheight_1 highlight2">Rejuvenation</p>
+												<h3 class="highlight">spa
+													<br> resort</h3>
+												<hr class="divider-size_2_30 divider_25 highlight2">
+												<p>
+													That they cannot foresee the pain and trouble that are bound to ensue and belongs
+												</p>
+												<hr>
+												<a href="services.html" class="theme_button wide_button color2">View details</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<!-- Architecture nav tabs -->
+			<section class="ls">
+				<div class="container columns_padding_0">
+					<ul class="nav nav-tabs row margin_0 architecture-tabs" role="tablist">
+						<li class="active col-sm-4">
+							<a href="#exterior" class="lusitana-bold-up fontsize_14" role="tab" data-toggle="tab">excellent exterior</a>
+						</li>
+						<li class="col-sm-4">
+							<a href="#interior" class="lusitana-bold-up fontsize_14" role="tab" data-toggle="tab">luxury interior</a>
+						</li>
+						<li class="col-sm-4">
+							<a href="#equipment" class="lusitana-bold-up fontsize_14" role="tab" data-toggle="tab">specialized equipment</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- Architecture panes -->
+			<section class="ls ms section_padding_50">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="tab-content architecture-tab-content text-center">
+								<div class="tab-pane fade in active with_background" id="exterior">
+									<div class="tab-media">
+										<div class="tab-content">
+											<div class="tab-pane fade in active" id="exterior01">
+												<img src="./images/architecture/exterior01.jpg" alt="">
+												<div class="media-links">
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/exterior01.jpg"></a>
+												</div>
+											</div>
+											<div class="tab-pane fade in" id="exterior02">
+												<img src="./images/architecture/exterior02.jpg" alt="">
+												<div class="media-links">
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/exterior02.jpg"></a>
+												</div>
+											</div>
+											<div class="tab-pane fade in" id="exterior03">
+												<img src="./images/architecture/exterior03.jpg" alt="">
+												<div class="media-links">
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/exterior03.jpg"></a>
+												</div>
+											</div>
+											<div class="tab-pane fade in" id="exterior04">
+												<img src="./images/architecture/exterior04.jpg" alt="">
+												<div class="media-links">
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/exterior04.jpg"></a>
+												</div>
+											</div>
+										</div>
+
+										<ul class="tab-media-elements with_border thick_border mutted_border with_background no-bullets" role="tablist">
+											<li class="item-media active">
+												<a href="#exteriorr01" role="tab" data-toggle="tab">
+													<img src="./images/architecture/exterior01.jpg" alt="">
+												</a>
+												<!-- <div class="media-links"></div> -->
+											</li>
+											<li class="item-media">
+												<a href="#exterior02" role="tab" data-toggle="tab">
+													<img src="./images/architecture/exterior02.jpg" alt="">
+												</a>
+											</li>
+											<li class="item-media">
+												<a href="#exterior03" role="tab" data-toggle="tab">
+													<img src="./images/architecture/exterior03.jpg" alt="">
+												</a>
+											</li>
+											<li class="item-media">
+												<a href="#exterior04" role="tab" data-toggle="tab">
+													<img src="./images/architecture/exterior04.jpg" alt="">
+												</a>
+											</li>
+											<li class="clearfix"></li>
+										</ul>
+
+									</div>
+
+									<div class="tab-content">
+										<h3 class="highlight bottommargin_25">wellness luxury
+											<br>spa resort</h3>
+										<img src="img/logo-icon-color4.png" alt="">
+										<p class="topmargin_20 fontsize_14 bold letter-spacing-033 text-uppercase grey">
+											give youself a moment
+											<br> of relaxation
+										</p>
+										<hr class="divider-size_1_70 highlight4">
+										<p class="darkenfont">
+											We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, that they cannot foresee the pain and trouble that are bound to ensue fail.
+										</p>
+									</div>
+
+									<div class="clearfix"></div>
+								</div>
+
+								<div class="tab-pane fade in with_background content-left" id="interior">
+
+
+									<div class="tab-media">
+										<div class="tab-content">
+											<div class="tab-pane fade in active" id="interior01">
+												<img src="./images/architecture/interior01.jpg" alt="">
+												<div class="media-links">
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/interior01.jpg"></a>
+												</div>
+											</div>
+											<div class="tab-pane fade in" id="interior02">
+												<img src="./images/architecture/interior02.jpg" alt="">
+												<div class="media-links">
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/interior02.jpg"></a>
+												</div>
+											</div>
+											<div class="tab-pane fade in" id="interior03">
+												<img src="./images/architecture/interior03.jpg" alt="">
+												<div class="media-links">
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/interior03.jpg"></a>
+												</div>
+											</div>
+											<div class="tab-pane fade in" id="interior04">
+												<img src="./images/architecture/interior04.jpg" alt="">
+												<div class="media-links">
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/interior04.jpg"></a>
+												</div>
+											</div>
+										</div>
+
+										<ul class="tab-media-elements with_border thick_border mutted_border with_background no-bullets" role="tablist">
+											<li class="item-media active">
+												<a href="#interior01" role="tab" data-toggle="tab" class="media-color3">
+													<img src="./images/architecture/interior01.jpg" alt="">
+												</a>
+												<!-- <div class="media-links"></div> -->
+											</li>
+											<li class="item-media">
+												<a href="#interior02" role="tab" data-toggle="tab" class="media-color3">
+													<img src="./images/architecture/interior02.jpg" alt="">
+												</a>
+											</li>
+											<li class="item-media">
+												<a href="#interior03" role="tab" data-toggle="tab" class="media-color3">
+													<img src="./images/architecture/interior03.jpg" alt="">
+												</a>
+											</li>
+											<li class="item-media">
+												<a href="#interior04" role="tab" data-toggle="tab" class="media-color3">
+													<img src="./images/architecture/interior04.jpg" alt="">
+												</a>
+											</li>
+											<li class="clearfix"></li>
+										</ul>
+
+									</div>
+
+									<div class="tab-content">
+										<h3 class="highlight bottommargin_25">wellness luxury
+											<br>spa resort</h3>
+										<img src="img/logo-icon-color3.png" alt="">
+										<p class="topmargin_20 fontsize_14 bold letter-spacing-033 text-uppercase grey">
+											give youself a moment
+											<br> of relaxation
+										</p>
+										<hr class="divider-size_1_70 highlight3">
+										<p class="darkenfont">
+											We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, that they cannot foresee the pain and trouble that are bound to ensue fail.
+										</p>
+									</div>
+
+								</div>
+
+								<div class="tab-pane fade in with_background" id="equipment">
+									<div class="tab-media">
+										<div class="tab-content">
+											<div class="tab-pane fade in active" id="equipment01">
+												<img src="./images/architecture/equipment01.jpg" alt="">
+												<div class="media-links">
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/equipment01.jpg"></a>
+												</div>
+											</div>
+											<div class="tab-pane fade in" id="equipment02">
+												<img src="./images/architecture/equipment02.jpg" alt="">
+												<div class="media-links">
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/equipment02.jpg"></a>
+												</div>
+											</div>
+											<div class="tab-pane fade in" id="equipment03">
+												<img src="./images/architecture/equipment03.jpg" alt="">
+												<div class="media-links">
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/equipment03.jpg"></a>
+												</div>
+											</div>
+											<div class="tab-pane fade in" id="equipment04">
+												<img src="./images/architecture/equipment04.jpg" alt="">
+												<div class="media-links">
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/equipment04.jpg"></a>
+												</div>
+											</div>
+										</div>
+
+										<ul class="tab-media-elements with_border thick_border mutted_border with_background no-bullets" role="tablist">
+											<li class="item-media active">
+												<a href="#equipment01" role="tab" data-toggle="tab" class="media-color2">
+													<img src="./images/architecture/equipment01.jpg" alt="">
+												</a>
+												<!-- <div class="media-links"></div> -->
+											</li>
+											<li class="item-media">
+												<a href="#equipment02" role="tab" data-toggle="tab" class="media-color2">
+													<img src="./images/architecture/equipment02.jpg" alt="">
+												</a>
+											</li>
+											<li class="item-media">
+												<a href="#equipment03" role="tab" data-toggle="tab" class="media-color2">
+													<img src="./images/architecture/equipment03.jpg" alt="">
+												</a>
+											</li>
+											<li class="item-media">
+												<a href="#equipment04" role="tab" data-toggle="tab" class="media-color2">
+													<img src="./images/architecture/equipment04.jpg" alt="">
+												</a>
+											</li>
+											<li class="clearfix"></li>
+										</ul>
+
+									</div>
+
+									<div class="tab-content">
+										<h3 class="highlight bottommargin_25">wellness luxury
+											<br>spa resort</h3>
+										<img src="img/logo-icon-color2.png" alt="">
+										<p class="topmargin_20 fontsize_14 bold letter-spacing-033 text-uppercase grey">
+											give youself a moment
+											<br> of relaxation
+										</p>
+										<hr class="divider-size_1_70 highlight2">
+										<p class="darkenfont">
+											We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, that they cannot foresee the pain and trouble that are bound to ensue fail.
+										</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls section_padding_top_100 section_padding_bottom_120">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h3 class="topmargin_0 highlight">Our experts &amp; spa staff</h3>
+							<hr class="divider-size_2_30">
+							<p class="fontsize_14 letter-spacing-033 text-uppercase bold grey">The Team of Professionals</p>
+
+
+							<div class="owl-carousel team-carusel" data-margin="30" data-nav="true" data-items="6" data-loop="true" data-dots="false" data-autoplay="false" data-responsive-xs="1" data-responsive-sm="3" data-responsive-md="4" data-responsive-lg="5" data-responsive-xlg="6">
+
+								<div class="vertical-item content-absolute team-item">
+									<div class="item-media">
+										<img src="images/team/01.jpg" alt="">
+										<div class="media-links">
+											<div class="team-member-social">
+												<a class="social-icon soc-facebook theme-icon" href="#" title="Facebook"></a>
+												<a class="social-icon soc-twitter theme-icon" href="#" title="Twitter"></a>
+												<a class="social-icon soc-google theme-icon" href="#" title="Google"></a>
+												<a class="social-icon soc-youtube theme-icon" href="#" title="Youtube"></a>
+											</div>
+										</div>
+									</div>
+									<div class="item-content">
+										<h6>
+											<a href="#">Lorraine
+												<br>Fields</a>
+										</h6>
+										<hr class="divider-size_2_30">
+										<p class="small-text">
+											Spa Manager
+										</p>
+									</div>
+								</div>
+
+								<div class="vertical-item content-absolute team-item">
+									<div class="item-media">
+										<img src="images/team/02.jpg" alt="">
+										<div class="media-links">
+											<div class="team-member-social">
+												<a class="social-icon soc-facebook theme-icon" href="#" title="Facebook"></a>
+												<a class="social-icon soc-twitter theme-icon" href="#" title="Twitter"></a>
+												<a class="social-icon soc-google theme-icon" href="#" title="Google"></a>
+												<a class="social-icon soc-youtube theme-icon" href="#" title="Youtube"></a>
+											</div>
+										</div>
+									</div>
+									<div class="item-content">
+										<h6>
+											<a href="#">Rosemarie
+												<br>Fletcher</a>
+										</h6>
+										<hr class="divider-size_2_30">
+										<p class="small-text">
+											Beauty &amp; Wellness Trainer
+										</p>
+									</div>
+								</div>
+
+								<div class="vertical-item content-absolute team-item">
+									<div class="item-media">
+										<img src="images/team/03.jpg" alt="">
+										<div class="media-links">
+											<div class="team-member-social">
+												<a class="social-icon soc-facebook theme-icon" href="#" title="Facebook"></a>
+												<a class="social-icon soc-twitter theme-icon" href="#" title="Twitter"></a>
+												<a class="social-icon soc-google theme-icon" href="#" title="Google"></a>
+												<a class="social-icon soc-youtube theme-icon" href="#" title="Youtube"></a>
+											</div>
+										</div>
+									</div>
+									<div class="item-content">
+										<h6>
+											<a href="#">Emma
+												<br>Woods</a>
+										</h6>
+										<hr class="divider-size_2_30">
+										<p class="small-text">
+											Certified Masseur &amp; Pool Attendant
+										</p>
+									</div>
+								</div>
+
+								<div class="vertical-item content-absolute team-item">
+									<div class="item-media">
+										<img src="images/team/04.jpg" alt="">
+										<div class="media-links">
+											<div class="team-member-social">
+												<a class="social-icon soc-facebook theme-icon" href="#" title="Facebook"></a>
+												<a class="social-icon soc-twitter theme-icon" href="#" title="Twitter"></a>
+												<a class="social-icon soc-google theme-icon" href="#" title="Google"></a>
+												<a class="social-icon soc-youtube theme-icon" href="#" title="Youtube"></a>
+											</div>
+										</div>
+									</div>
+									<div class="item-content">
+										<h6>
+											<a href="#">Ollie
+												<br>Burgess</a>
+										</h6>
+										<hr class="divider-size_2_30">
+										<p class="small-text">
+											Certified Beautician
+										</p>
+									</div>
+								</div>
+
+								<div class="vertical-item content-absolute team-item">
+									<div class="item-media">
+										<img src="images/team/05.jpg" alt="">
+										<div class="media-links">
+											<div class="team-member-social">
+												<a class="social-icon soc-facebook theme-icon" href="#" title="Facebook"></a>
+												<a class="social-icon soc-twitter theme-icon" href="#" title="Twitter"></a>
+												<a class="social-icon soc-google theme-icon" href="#" title="Google"></a>
+												<a class="social-icon soc-youtube theme-icon" href="#" title="Youtube"></a>
+											</div>
+										</div>
+									</div>
+									<div class="item-content">
+										<h6>
+											<a href="#">Lorraine
+												<br>Fields </a>
+										</h6>
+										<hr class="divider-size_2_30">
+										<p class="small-text">
+											Spa Manager
+										</p>
+									</div>
+								</div>
+
+								<div class="vertical-item content-absolute team-item">
+									<div class="item-media">
+										<img src="images/team/06.jpg" alt="">
+										<div class="media-links">
+											<div class="team-member-social">
+												<a class="social-icon soc-facebook theme-icon" href="#" title="Facebook"></a>
+												<a class="social-icon soc-twitter theme-icon" href="#" title="Twitter"></a>
+												<a class="social-icon soc-google theme-icon" href="#" title="Google"></a>
+												<a class="social-icon soc-youtube theme-icon" href="#" title="Youtube"></a>
+											</div>
+										</div>
+									</div>
+									<div class="item-content">
+										<h6>
+											<a href="#">Sheldon
+												<br>Moreno</a>
+										</h6>
+										<hr class="divider-size_2_30">
+										<p class="small-text">
+											Massage Therapist
+										</p>
+									</div>
+								</div>
+
+								<div class="vertical-item content-absolute team-item">
+									<div class="item-media">
+										<img src="images/team/01.jpg" alt="">
+										<div class="media-links">
+											<div class="team-member-social">
+												<a class="social-icon soc-facebook theme-icon" href="#" title="Facebook"></a>
+												<a class="social-icon soc-twitter theme-icon" href="#" title="Twitter"></a>
+												<a class="social-icon soc-google theme-icon" href="#" title="Google"></a>
+												<a class="social-icon soc-youtube theme-icon" href="#" title="Youtube"></a>
+											</div>
+										</div>
+									</div>
+									<div class="item-content">
+										<h6>
+											<a href="#">Lorraine
+												<br>Fields</a>
+										</h6>
+										<hr class="divider-size_2_30">
+										<p class="small-text">
+											Spa Manager
+										</p>
+									</div>
+								</div>
+
+							</div>
+							<!-- .owl-carousel -->
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page_copyright theme_copyright texture_bg cs columns_padding_0 columns_margin_0">
+				<div class="container">
+					<div class="row display_table_md">
+						<div class="col-md-4 col-md-push-4 text-center display_table_cell_md">
+							<a href="./" class="logo">
+								<div class="main_bg_color2">
+									<img src="images/logo.png" alt="">
+								</div>
+								<h1>Clinique</h1>
+							</a>
+						</div>
+						<div class="col-md-4 col-md-pull-4 text-center text-md-left display_table_cell_md">
+							<p class="small-text grey margin_0">clinique - wellness &amp; spa resort &copy; 2016</p>
+						</div>
+						<div class="col-md-4 text-center text-md-right display_table_cell_md">
+							<p class="small-text grey margin_0">Created with
+								<i class="rt-icon2-heart highlight2"></i> by MWTemplates</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+
+
+</body>
+
+</html>

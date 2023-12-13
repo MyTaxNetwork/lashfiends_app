@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -17,16 +18,16 @@
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.css" id="color-switcher-link">
-	<link rel="stylesheet" href="css/animations.css">
-	<link rel="stylesheet" href="css/fonts.css">
-	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/main.css' %}" id="color-switcher-link">
+	<link rel="stylesheet" href="{% static 'css/animations.css' %}">
+	<link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+	<script src="{% static 'js/vendor/modernizr-2.6.2.min.js' %}"></script>
 
 	<!--[if lt IE 9]>
-		<script src="js/vendor/html5shiv.min.js"></script>
-		<script src="js/vendor/respond.min.js"></script>
-		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+		<script src="{% static 'js/vendor/html5shiv.min.js' %}"></script>
+		<script src="{% static 'js/vendor/respond.min.js' %}"></script>
+		<script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
 	<![endif]-->
 
 </head>
@@ -46,7 +47,8 @@
 		<div class="widget widget_search">
 			<form method="get" class="searchform form-inline" action="/">
 				<div class="form-group">
-					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword"
+						id="modal-search-input">
 				</div>
 				<button type="submit" class="theme_button">Search</button>
 			</form>
@@ -78,7 +80,8 @@
 								<li class="dropdown login-dropdown">
 
 									<span class="small-text">My account</span>
-									<a class="topline-button" id="login" data-target="#" href="./" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+									<a class="topline-button" id="login" data-target="#" href="./"
+										data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
 										<i class="rt-icon2-media-play"></i>
 									</a>
 
@@ -102,7 +105,8 @@
 								</li>
 								<li class="dropdown cart-dropdown">
 
-									<a class="topline-button" id="cart" data-target="#" href="./" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+									<a class="topline-button" id="cart" data-target="#" href="./" data-toggle="dropdown"
+										aria-haspopup="true" role="button" aria-expanded="false">
 										<span class="top-button top-button-cart"></span>
 										<span class="total highlight2 lusitana-bold-up fontsize_18">$
 											<span class="amount">1975,00</span>
@@ -111,14 +115,16 @@
 
 								</li>
 								<li class="dropdown search-dropdown">
-									<a class="topline-button" id="search" data-target="#" href="./" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+									<a class="topline-button" id="search" data-target="#" href="./"
+										data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
 										<span class="top-button top-button-search"></span>
 									</a>
 									<div class="dropdown-menu" aria-labelledby="login">
 										<form method="get" class="searchform form-inline bold-placeholder" action="/">
 											<div class="form-group">
 												<label class="sr-only" for="search-input">Search for:</label>
-												<input id="search-input" type="text" value="" name="search" class="form-control" placeholder="Search to site">
+												<input id="search-input" type="text" value="" name="search"
+													class="form-control" placeholder="Search to site">
 											</div>
 											<button type="submit" class="topline-button">
 												<span class="top-button top-button-search"></span>
@@ -132,7 +138,7 @@
 
 						<div class="col-md-4 col-sm-12 text-center col-md-pull-4">
 							<a href="./" class="logo">
-								<img src="images/logo.png" alt="" class="main_bg_color">
+								<img src="{% static 'images/logo.png' %}" alt="" class="main_bg_color">
 								<h1>Clinique</h1>
 							</a>
 						</div>
@@ -602,14 +608,15 @@
 				<div class="flexslider">
 					<ul class="slides">
 						<li>
-							<img src="images/slide01.jpg" alt="">
+							<img src="{% static 'images/slide01.jpg' %}" alt="">
 							<div class="container">
 								<div class="row">
 									<div class="col-sm-12">
 										<div class="slide_description_wrapper text-right">
 											<div class="slide_description text-center">
 												<div class="intro-layer" data-animation="slideExpandUp">
-													<p class="text-uppercase fontsize_14 bold letter-spacing-033 bottommargin_15">
+													<p
+														class="text-uppercase fontsize_14 bold letter-spacing-033 bottommargin_15">
 														look and feel your best
 													</p>
 													<h2 class="margin_0">welcome to the</h2>
@@ -633,14 +640,15 @@
 						</li>
 
 						<li>
-							<img src="images/slide01.jpg" alt="">
+							<img src="{% static 'images/slide01.jpg' %}" alt="">
 							<div class="container">
 								<div class="row">
 									<div class="col-sm-12">
 										<div class="slide_description_wrapper text-right">
 											<div class="slide_description text-center">
 												<div class="intro-layer" data-animation="slideExpandUp">
-													<p class="text-uppercase fontsize_14 bold letter-spacing-033 bottommargin_15">
+													<p
+														class="text-uppercase fontsize_14 bold letter-spacing-033 bottommargin_15">
 														look and feel your best
 													</p>
 													<h2 class="margin_0">welcome to the</h2>
@@ -704,7 +712,8 @@
 									<div class="media-body lineheight_1 media-middle">
 										<span class="lusitana-bold-up fontsize_14">call to make an appontment</span>
 										<br>
-										<span class="lusitana-bold-up fontsize_18 highlight2">1 (800) 300 2214</span>
+										<span class="lusitana-bold-up fontsize_18 highlight2">1 (800) 300
+											2214</span>
 									</div>
 								</div>
 							</div>
@@ -739,24 +748,29 @@
 					<div class="row">
 						<div class="col-lg-5 col-md-4">
 							<p class="fontsize_14 text-uppercase bold letter-spacing-033 grey bottommargin_10">estd
-								<span class="logo-icon icon-small"></span> 1987</p>
+								<span class="logo-icon icon-small"></span> 1987
+							</p>
 							<h3 class="highlight topmargin_0 bottommargin_15">
 								The Infinity of Beauty &amp; Indulgence
 							</h3>
 							<p class="bottommargin_0">
-								But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of
+								But in certain circumstances and owing to the claims of duty or the obligations of
+								business it will frequently occur that pleasures have to be repudiated and
+								annoyances
+								accepted. The wise man therefore always holds in these matters to this principle of
 								selection.
 							</p>
 						</div>
 						<div class="col-lg-5 col-md-5 text-center">
 							<div class="founding-date-cont">
-								<img src="images/director.png" alt="">
+								<img src="{% static 'images/director.png' %}" alt="">
 							</div>
 						</div>
 						<div class="col-lg-2 col-md-3 text-center text-md-left">
 							<p class="fontsize_14 bold text-uppercase grey margin_0">director &amp; owner</p>
 							<h3 class="highlight topmargin_10">Lori
-								<br> Foster</h3>
+								<br> Foster
+							</h3>
 							<hr class="inline-block">
 							<br>
 							<div class="signature"></div>
@@ -773,18 +787,22 @@
 								<div class="row display_table_sm">
 									<div class="col-md-5 display_table_cell_sm text-center">
 										<div class="item-media entry-thumbnail">
-											<img src="images/banner-big.jpg" alt="">
+											<img src="{% static 'images/banner-big.jpg' %}" alt="">
 										</div>
 									</div>
 									<div class="col-md-7 text-center display_table_cell_sm">
 										<div class="item-content">
-											<p class="fontsize_14 bold letter-spacing-033 text-uppercase highlight3">gift certificate</p>
+											<p class="fontsize_14 bold letter-spacing-033 text-uppercase highlight3">
+												gift certificate</p>
 											<hr class="divider-size_2_30">
 											<h3 class="highlight">This friday
 												<br> only 20% off
-												<br> deep massage</h3>
-											<h6 class="theme-block with_padding topmargin_50 bottommargin_50">use a change to take advantage of this offer!</h6>
-											<a href="appointment.html" class="theme_button color3 big_button">Request an appointment</a>
+												<br> deep massage
+											</h3>
+											<h6 class="theme-block with_padding topmargin_50 bottommargin_50">use a
+												change to take advantage of this offer!</h6>
+											<a href="appointment.html" class="theme_button color3 big_button">Request an
+												appointment</a>
 										</div>
 									</div>
 								</div>
@@ -793,28 +811,32 @@
 						<div class="col-lg-offset-0 col-lg-3 col-md-offset-2 col-md-8">
 							<div class="banner with_border thick_border with_padding with_background">
 								<div class="row">
-									<div class="vertical-item content-absolute small-banner col-xs-12 col-sm-6 col-lg-12">
+									<div
+										class="vertical-item content-absolute small-banner col-xs-12 col-sm-6 col-lg-12">
 										<div class="item-media">
-											<img src="images/banner-small02.jpg" alt="">
+											<img src="{% static 'images/banner-small02.jpg' %}" alt="">
 										</div>
 										<div class="item-content with_background text-center">
 											<h6>
 												Be beautiful. Feel good about it
 											</h6>
-											<a href="blog-right.html" class="theme_button color2 block_button">Our blog</a>
+											<a href="blog-right.html" class="theme_button color2 block_button">Our
+												blog</a>
 										</div>
 									</div>
 									<div class="clearfix hidden-md hidden-sm"></div>
 									<hr class="divider-size_1_70 divider_30 hidden-md hidden-sm">
-									<div class="vertical-item content-absolute small-banner col-xs-12 col-sm-6 col-lg-12">
+									<div
+										class="vertical-item content-absolute small-banner col-xs-12 col-sm-6 col-lg-12">
 										<div class="item-media">
-											<img src="images/banner-small01.jpg" alt="">
+											<img src="{% static 'images/banner-small01.jpg' %}" alt="">
 										</div>
 										<div class="item-content with_background text-center">
 											<h6>
 												Your beauty is our profession
 											</h6>
-											<a href="shop.html" class="theme_button color4 block_button">Shop now</a>
+											<a href="shop.html" class="theme_button color4 block_button">Shop
+												now</a>
 										</div>
 									</div>
 								</div>
@@ -831,7 +853,9 @@
 						<div class="col-sm-12 text-center">
 							<h3 class="highlight margin_0">Procedures &amp; treatments</h3>
 							<hr class="divider-size_2_30 divider_25">
-							<p class="text-uppercase bold fontsize_14 letter-spacing-033 grey topmargin_-5 bottommargin_10">No longer beyond your budget</p>
+							<p
+								class="text-uppercase bold fontsize_14 letter-spacing-033 grey topmargin_-5 bottommargin_10">
+								No longer beyond your budget</p>
 						</div>
 					</div>
 					<div class="row bottommargin_10">
@@ -862,7 +886,7 @@
 						</div>
 						<div class="col-md-4 col-lg-6 text-center">
 							<div class="services-media">
-								<img src="images/services.png" alt="">
+								<img src="{% static 'images/services.png' %}" alt="">
 							</div>
 						</div>
 						<div class="col-md-4 col-lg-3">
@@ -903,7 +927,8 @@
 									<div class="row margin_0">
 										<div class="col-sm-4 col-lg-12">
 											<div class="with_padding">
-												<div class="lusitana-bold-up fontsize_56 lineheight_1 highlight">15</div>
+												<div class="lusitana-bold-up fontsize_56 lineheight_1 highlight">15
+												</div>
 												<h6 class="margin_0">years of experience</h6>
 											</div>
 										</div>
@@ -911,7 +936,8 @@
 										<hr class="divider-size_1_70 divider_0 hidden-md hidden-sm">
 										<div class="col-sm-4 col-lg-12">
 											<div class="with_padding">
-												<div class="lusitana-bold-up fontsize_56 lineheight_1 highlight">32</div>
+												<div class="lusitana-bold-up fontsize_56 lineheight_1 highlight">32
+												</div>
 												<h6 class="margin_0">members in team</h6>
 											</div>
 										</div>
@@ -919,7 +945,8 @@
 										<hr class="hidden-md hidden-sm divider_0">
 										<div class="col-sm-4 col-lg-12">
 											<div class="with_padding with_background">
-												<div class="lusitana-bold-up fontsize_56 lineheight_1 highlight4">75</div>
+												<div class="lusitana-bold-up fontsize_56 lineheight_1 highlight4">75
+												</div>
 												<h6 class="margin_0">professional procedures</h6>
 											</div>
 										</div>
@@ -936,18 +963,23 @@
 									<div class="col-sm-4">
 										<div class="vertical-item with_background with_padding">
 											<div class="item-media text-center">
-												<img src="images/lookbook01.jpg" alt="">
+												<img src="{% static 'images/lookbook01.jpg' %}" alt="">
 											</div>
 											<div class="item-content text-center">
-												<p class="letter-spacing-033 small-text lineheight_1 highlight4">Relaxation</p>
+												<p class="letter-spacing-033 small-text lineheight_1 highlight4">
+													Relaxation</p>
 												<h3 class="highlight">beauty
-													<br> center</h3>
+													<br> center
+												</h3>
 												<hr class="divider-size_2_30 divider_25 highlight4">
 												<p>
-													On the hand, we denounce with righteous indignation and dislike men whoare
+													On the hand, we denounce with righteous indignation and dislike
+													men
+													whoare
 												</p>
 												<hr>
-												<a href="services.html" class="theme_button wide_button color4">View details</a>
+												<a href="services.html" class="theme_button wide_button color4">View
+													details</a>
 											</div>
 										</div>
 									</div>
@@ -955,18 +987,22 @@
 									<div class="col-sm-4">
 										<div class="vertical-item muted_background with_padding">
 											<div class="item-media text-center">
-												<img src="images/lookbook02.jpg" alt="">
+												<img src="{% static 'images/lookbook02.jpg' %}" alt="">
 											</div>
 											<div class="item-content text-center">
-												<p class="letter-spacing-033 small-text lineheight_1 highlight3">refreshing</p>
+												<p class="letter-spacing-033 small-text lineheight_1 highlight3">
+													refreshing</p>
 												<h3 class="highlight">Hair
-													<br> salon</h3>
+													<br> salon
+												</h3>
 												<hr class="divider-size_2_30 divider_25 highlight3">
 												<p>
-													He rejects pleasures to secure other greater pleasures or else endures pains to avoid
+													He rejects pleasures to secure other greater pleasures or else
+													endures pains to avoid
 												</p>
 												<hr>
-												<a href="services.html" class="theme_button wide_button color3">View details</a>
+												<a href="services.html" class="theme_button wide_button color3">View
+													details</a>
 											</div>
 										</div>
 									</div>
@@ -974,18 +1010,22 @@
 									<div class="col-sm-4">
 										<div class="vertical-item with_background with_padding">
 											<div class="item-media text-center">
-												<img src="images/lookbook03.jpg" alt="">
+												<img src="{% static 'images/lookbook03.jpg' %}" alt="">
 											</div>
 											<div class="item-content text-center">
-												<p class="letter-spacing-033 small-text lineheight_1 highlight2">Rejuvenation</p>
+												<p class="letter-spacing-033 small-text lineheight_1 highlight2">
+													Rejuvenation</p>
 												<h3 class="highlight">spa
-													<br> resort</h3>
+													<br> resort
+												</h3>
 												<hr class="divider-size_2_30 divider_25 highlight2">
 												<p>
-													That they cannot foresee the pain and trouble that are bound to ensue and belongs
+													That they cannot foresee the pain and trouble that are bound to
+													ensue and belongs
 												</p>
 												<hr>
-												<a href="services.html" class="theme_button wide_button color2">View details</a>
+												<a href="services.html" class="theme_button wide_button color2">View
+													details</a>
 											</div>
 										</div>
 									</div>
@@ -1002,13 +1042,16 @@
 				<div class="container columns_padding_0">
 					<ul class="nav nav-tabs row margin_0 architecture-tabs" role="tablist">
 						<li class="active col-sm-4">
-							<a href="#exterior" class="lusitana-bold-up fontsize_14" role="tab" data-toggle="tab">excellent exterior</a>
+							<a href="#exterior" class="lusitana-bold-up fontsize_14" role="tab"
+								data-toggle="tab">excellent exterior</a>
 						</li>
 						<li class="col-sm-4">
-							<a href="#interior" class="lusitana-bold-up fontsize_14" role="tab" data-toggle="tab">luxury interior</a>
+							<a href="#interior" class="lusitana-bold-up fontsize_14" role="tab" data-toggle="tab">luxury
+								interior</a>
 						</li>
 						<li class="col-sm-4">
-							<a href="#equipment" class="lusitana-bold-up fontsize_14" role="tab" data-toggle="tab">specialized equipment</a>
+							<a href="#equipment" class="lusitana-bold-up fontsize_14" role="tab"
+								data-toggle="tab">specialized equipment</a>
 						</li>
 					</ul>
 				</div>
@@ -1023,51 +1066,60 @@
 									<div class="tab-media">
 										<div class="tab-content">
 											<div class="tab-pane fade in active" id="exterior01">
-												<img src="./images/architecture/exterior01.jpg" alt="">
+												<img src="{% static './images/architecture/exterior01.jpg' %}" alt="">
 												<div class="media-links">
-													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/exterior01.jpg"></a>
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]"
+														href="/images/architecture/exterior01.jpg"></a>
 												</div>
 											</div>
 											<div class="tab-pane fade in" id="exterior02">
-												<img src="./images/architecture/exterior02.jpg" alt="">
+												<img src="{% static './images/architecture/exterior02.jpg' %}" alt="">
 												<div class="media-links">
-													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/exterior02.jpg"></a>
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]"
+														href="/images/architecture/exterior02.jpg"></a>
 												</div>
 											</div>
 											<div class="tab-pane fade in" id="exterior03">
-												<img src="./images/architecture/exterior03.jpg" alt="">
+												<img src="{% static './images/architecture/exterior03.jpg' %}" alt="">
 												<div class="media-links">
-													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/exterior03.jpg"></a>
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]"
+														href="/images/architecture/exterior03.jpg"></a>
 												</div>
 											</div>
 											<div class="tab-pane fade in" id="exterior04">
-												<img src="./images/architecture/exterior04.jpg" alt="">
+												<img src="{% static './images/architecture/exterior04.jpg' %}" alt="">
 												<div class="media-links">
-													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/exterior04.jpg"></a>
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]"
+														href="/images/architecture/exterior04.jpg"></a>
 												</div>
 											</div>
 										</div>
 
-										<ul class="tab-media-elements with_border thick_border mutted_border with_background no-bullets" role="tablist">
+										<ul class="tab-media-elements with_border thick_border mutted_border with_background no-bullets"
+											role="tablist">
 											<li class="item-media active">
 												<a href="#exteriorr01" role="tab" data-toggle="tab">
-													<img src="./images/architecture/exterior01.jpg" alt="">
+													<img src="{% static './images/architecture/exterior01.jpg' %}"
+														alt="">
 												</a>
 												<!-- <div class="media-links"></div> -->
 											</li>
 											<li class="item-media">
 												<a href="#exterior02" role="tab" data-toggle="tab">
-													<img src="./images/architecture/exterior02.jpg" alt="">
+													<img src="{% static './images/architecture/exterior02.jpg' %}"
+														alt="">
 												</a>
 											</li>
 											<li class="item-media">
 												<a href="#exterior03" role="tab" data-toggle="tab">
-													<img src="./images/architecture/exterior03.jpg" alt="">
+													<img src="{% static './images/architecture/exterior03.jpg' %}"
+														alt="">
 												</a>
 											</li>
 											<li class="item-media">
 												<a href="#exterior04" role="tab" data-toggle="tab">
-													<img src="./images/architecture/exterior04.jpg" alt="">
+													<img src="{% static './images/architecture/exterior04.jpg' %}"
+														alt="">
 												</a>
 											</li>
 											<li class="clearfix"></li>
@@ -1077,15 +1129,20 @@
 
 									<div class="tab-content">
 										<h3 class="highlight bottommargin_25">wellness luxury
-											<br>spa resort</h3>
-										<img src="img/logo-icon-color4.png" alt="">
+											<br>spa resort
+										</h3>
+										<img src="{% static 'img/logo-icon-color4.png' %}" alt="">
 										<p class="topmargin_20 fontsize_14 bold letter-spacing-033 text-uppercase grey">
 											give youself a moment
 											<br> of relaxation
 										</p>
 										<hr class="divider-size_1_70 highlight4">
 										<p class="darkenfont">
-											We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, that they cannot foresee the pain and trouble that are bound to ensue fail.
+											We denounce with righteous indignation and dislike men who are so
+											beguiled
+											and demoralized by the charms of pleasure of the moment, that they
+											cannot
+											foresee the pain and trouble that are bound to ensue fail.
 										</p>
 									</div>
 
@@ -1098,51 +1155,60 @@
 									<div class="tab-media">
 										<div class="tab-content">
 											<div class="tab-pane fade in active" id="interior01">
-												<img src="./images/architecture/interior01.jpg" alt="">
+												<img src="{% static './images/architecture/interior01.jpg' %}" alt="">
 												<div class="media-links">
-													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/interior01.jpg"></a>
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]"
+														href="/images/architecture/interior01.jpg"></a>
 												</div>
 											</div>
 											<div class="tab-pane fade in" id="interior02">
-												<img src="./images/architecture/interior02.jpg" alt="">
+												<img src="{% static './images/architecture/interior02.jpg' %}" alt="">
 												<div class="media-links">
-													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/interior02.jpg"></a>
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]"
+														href="/images/architecture/interior02.jpg"></a>
 												</div>
 											</div>
 											<div class="tab-pane fade in" id="interior03">
-												<img src="./images/architecture/interior03.jpg" alt="">
+												<img src="{% static './images/architecture/interior03.jpg' %}" alt="">
 												<div class="media-links">
-													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/interior03.jpg"></a>
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]"
+														href="/images/architecture/interior03.jpg"></a>
 												</div>
 											</div>
 											<div class="tab-pane fade in" id="interior04">
-												<img src="./images/architecture/interior04.jpg" alt="">
+												<img src="{% static './images/architecture/interior04.jpg' %}" alt="">
 												<div class="media-links">
-													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/interior04.jpg"></a>
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]"
+														href="/images/architecture/interior04.jpg"></a>
 												</div>
 											</div>
 										</div>
 
-										<ul class="tab-media-elements with_border thick_border mutted_border with_background no-bullets" role="tablist">
+										<ul class="tab-media-elements with_border thick_border mutted_border with_background no-bullets"
+											role="tablist">
 											<li class="item-media active">
 												<a href="#interior01" role="tab" data-toggle="tab" class="media-color3">
-													<img src="./images/architecture/interior01.jpg" alt="">
+													<img src="{% static './images/architecture/interior01.jpg' %}"
+														alt="">
 												</a>
 												<!-- <div class="media-links"></div> -->
 											</li>
 											<li class="item-media">
 												<a href="#interior02" role="tab" data-toggle="tab" class="media-color3">
-													<img src="./images/architecture/interior02.jpg" alt="">
+													<img src="{% static './images/architecture/interior02.jpg' %}"
+														alt="">
 												</a>
 											</li>
 											<li class="item-media">
 												<a href="#interior03" role="tab" data-toggle="tab" class="media-color3">
-													<img src="./images/architecture/interior03.jpg" alt="">
+													<img src="{% static './images/architecture/interior03.jpg' %}"
+														alt="">
 												</a>
 											</li>
 											<li class="item-media">
 												<a href="#interior04" role="tab" data-toggle="tab" class="media-color3">
-													<img src="./images/architecture/interior04.jpg" alt="">
+													<img src="{% static './images/architecture/interior04.jpg' %}"
+														alt="">
 												</a>
 											</li>
 											<li class="clearfix"></li>
@@ -1152,15 +1218,20 @@
 
 									<div class="tab-content">
 										<h3 class="highlight bottommargin_25">wellness luxury
-											<br>spa resort</h3>
-										<img src="img/logo-icon-color3.png" alt="">
+											<br>spa resort
+										</h3>
+										<img src="{% static 'img/logo-icon-color3.png' %}" alt="">
 										<p class="topmargin_20 fontsize_14 bold letter-spacing-033 text-uppercase grey">
 											give youself a moment
 											<br> of relaxation
 										</p>
 										<hr class="divider-size_1_70 highlight3">
 										<p class="darkenfont">
-											We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, that they cannot foresee the pain and trouble that are bound to ensue fail.
+											We denounce with righteous indignation and dislike men who are so
+											beguiled
+											and demoralized by the charms of pleasure of the moment, that they
+											cannot
+											foresee the pain and trouble that are bound to ensue fail.
 										</p>
 									</div>
 
@@ -1170,51 +1241,64 @@
 									<div class="tab-media">
 										<div class="tab-content">
 											<div class="tab-pane fade in active" id="equipment01">
-												<img src="./images/architecture/equipment01.jpg" alt="">
+												<img src="{% static './images/architecture/equipment01.jpg' %}" alt="">
 												<div class="media-links">
-													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/equipment01.jpg"></a>
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]"
+														href="/images/architecture/equipment01.jpg"></a>
 												</div>
 											</div>
 											<div class="tab-pane fade in" id="equipment02">
-												<img src="./images/architecture/equipment02.jpg" alt="">
+												<img src="{% static './images/architecture/equipment02.jpg' %}" alt="">
 												<div class="media-links">
-													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/equipment02.jpg"></a>
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]"
+														href="/images/architecture/equipment02.jpg"></a>
 												</div>
 											</div>
 											<div class="tab-pane fade in" id="equipment03">
-												<img src="./images/architecture/equipment03.jpg" alt="">
+												<img src="{% static './images/architecture/equipment03.jpg' %}" alt="">
 												<div class="media-links">
-													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/equipment03.jpg"></a>
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]"
+														href="/images/architecture/equipment03.jpg"></a>
 												</div>
 											</div>
 											<div class="tab-pane fade in" id="equipment04">
-												<img src="./images/architecture/equipment04.jpg" alt="">
+												<img src="{% static './images/architecture/equipment04.jpg' %}" alt="">
 												<div class="media-links">
-													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="/images/architecture/equipment04.jpg"></a>
+													<a class="abs-link prettyPhoto" title="" data-gal="prettyPhoto[gal]"
+														href="/images/architecture/equipment04.jpg"></a>
 												</div>
 											</div>
 										</div>
 
-										<ul class="tab-media-elements with_border thick_border mutted_border with_background no-bullets" role="tablist">
+										<ul class="tab-media-elements with_border thick_border mutted_border with_background no-bullets"
+											role="tablist">
 											<li class="item-media active">
-												<a href="#equipment01" role="tab" data-toggle="tab" class="media-color2">
-													<img src="./images/architecture/equipment01.jpg" alt="">
+												<a href="#equipment01" role="tab" data-toggle="tab"
+													class="media-color2">
+													<img src="{% static './images/architecture/equipment01.jpg' %}"
+														alt="">
 												</a>
 												<!-- <div class="media-links"></div> -->
 											</li>
 											<li class="item-media">
-												<a href="#equipment02" role="tab" data-toggle="tab" class="media-color2">
-													<img src="./images/architecture/equipment02.jpg" alt="">
+												<a href="#equipment02" role="tab" data-toggle="tab"
+													class="media-color2">
+													<img src="{% static './images/architecture/equipment02.jpg' %}"
+														alt="">
 												</a>
 											</li>
 											<li class="item-media">
-												<a href="#equipment03" role="tab" data-toggle="tab" class="media-color2">
-													<img src="./images/architecture/equipment03.jpg" alt="">
+												<a href="#equipment03" role="tab" data-toggle="tab"
+													class="media-color2">
+													<img src="{% static './images/architecture/equipment03.jpg' %}"
+														alt="">
 												</a>
 											</li>
 											<li class="item-media">
-												<a href="#equipment04" role="tab" data-toggle="tab" class="media-color2">
-													<img src="./images/architecture/equipment04.jpg" alt="">
+												<a href="#equipment04" role="tab" data-toggle="tab"
+													class="media-color2">
+													<img src="{% static './images/architecture/equipment04.jpg' %}"
+														alt="">
 												</a>
 											</li>
 											<li class="clearfix"></li>
@@ -1224,15 +1308,20 @@
 
 									<div class="tab-content">
 										<h3 class="highlight bottommargin_25">wellness luxury
-											<br>spa resort</h3>
-										<img src="img/logo-icon-color2.png" alt="">
+											<br>spa resort
+										</h3>
+										<img src="{% static 'img/logo-icon-color2.png' %}" alt="">
 										<p class="topmargin_20 fontsize_14 bold letter-spacing-033 text-uppercase grey">
 											give youself a moment
 											<br> of relaxation
 										</p>
 										<hr class="divider-size_1_70 highlight2">
 										<p class="darkenfont">
-											We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, that they cannot foresee the pain and trouble that are bound to ensue fail.
+											We denounce with righteous indignation and dislike men who are so
+											beguiled
+											and demoralized by the charms of pleasure of the moment, that they
+											cannot
+											foresee the pain and trouble that are bound to ensue fail.
 										</p>
 									</div>
 								</div>
@@ -1249,20 +1338,29 @@
 						<div class="col-sm-12 text-center">
 							<h3 class="topmargin_0 highlight">Our experts &amp; spa staff</h3>
 							<hr class="divider-size_2_30">
-							<p class="fontsize_14 letter-spacing-033 text-uppercase bold grey">The Team of Professionals</p>
+							<p class="fontsize_14 letter-spacing-033 text-uppercase bold grey">The Team of
+								Professionals
+							</p>
 
 
-							<div class="owl-carousel team-carusel" data-margin="30" data-nav="true" data-items="6" data-loop="true" data-dots="false" data-autoplay="false" data-responsive-xs="1" data-responsive-sm="3" data-responsive-md="4" data-responsive-lg="5" data-responsive-xlg="6">
+							<div class="owl-carousel team-carusel" data-margin="30" data-nav="true" data-items="6"
+								data-loop="true" data-dots="false" data-autoplay="false" data-responsive-xs="1"
+								data-responsive-sm="3" data-responsive-md="4" data-responsive-lg="5"
+								data-responsive-xlg="6">
 
 								<div class="vertical-item content-absolute team-item">
 									<div class="item-media">
-										<img src="images/team/01.jpg" alt="">
+										<img src="{% static 'images/team/01.jpg' %}" alt="">
 										<div class="media-links">
 											<div class="team-member-social">
-												<a class="social-icon soc-facebook theme-icon" href="#" title="Facebook"></a>
-												<a class="social-icon soc-twitter theme-icon" href="#" title="Twitter"></a>
-												<a class="social-icon soc-google theme-icon" href="#" title="Google"></a>
-												<a class="social-icon soc-youtube theme-icon" href="#" title="Youtube"></a>
+												<a class="social-icon soc-facebook theme-icon" href="#"
+													title="Facebook"></a>
+												<a class="social-icon soc-twitter theme-icon" href="#"
+													title="Twitter"></a>
+												<a class="social-icon soc-google theme-icon" href="#"
+													title="Google"></a>
+												<a class="social-icon soc-youtube theme-icon" href="#"
+													title="Youtube"></a>
 											</div>
 										</div>
 									</div>
@@ -1280,13 +1378,17 @@
 
 								<div class="vertical-item content-absolute team-item">
 									<div class="item-media">
-										<img src="images/team/02.jpg" alt="">
+										<img src="{% static 'images/team/02.jpg' %}" alt="">
 										<div class="media-links">
 											<div class="team-member-social">
-												<a class="social-icon soc-facebook theme-icon" href="#" title="Facebook"></a>
-												<a class="social-icon soc-twitter theme-icon" href="#" title="Twitter"></a>
-												<a class="social-icon soc-google theme-icon" href="#" title="Google"></a>
-												<a class="social-icon soc-youtube theme-icon" href="#" title="Youtube"></a>
+												<a class="social-icon soc-facebook theme-icon" href="#"
+													title="Facebook"></a>
+												<a class="social-icon soc-twitter theme-icon" href="#"
+													title="Twitter"></a>
+												<a class="social-icon soc-google theme-icon" href="#"
+													title="Google"></a>
+												<a class="social-icon soc-youtube theme-icon" href="#"
+													title="Youtube"></a>
 											</div>
 										</div>
 									</div>
@@ -1304,13 +1406,17 @@
 
 								<div class="vertical-item content-absolute team-item">
 									<div class="item-media">
-										<img src="images/team/03.jpg" alt="">
+										<img src="{% static 'images/team/03.jpg' %}" alt="">
 										<div class="media-links">
 											<div class="team-member-social">
-												<a class="social-icon soc-facebook theme-icon" href="#" title="Facebook"></a>
-												<a class="social-icon soc-twitter theme-icon" href="#" title="Twitter"></a>
-												<a class="social-icon soc-google theme-icon" href="#" title="Google"></a>
-												<a class="social-icon soc-youtube theme-icon" href="#" title="Youtube"></a>
+												<a class="social-icon soc-facebook theme-icon" href="#"
+													title="Facebook"></a>
+												<a class="social-icon soc-twitter theme-icon" href="#"
+													title="Twitter"></a>
+												<a class="social-icon soc-google theme-icon" href="#"
+													title="Google"></a>
+												<a class="social-icon soc-youtube theme-icon" href="#"
+													title="Youtube"></a>
 											</div>
 										</div>
 									</div>
@@ -1328,13 +1434,17 @@
 
 								<div class="vertical-item content-absolute team-item">
 									<div class="item-media">
-										<img src="images/team/04.jpg" alt="">
+										<img src="{% static 'images/team/04.jpg' %}" alt="">
 										<div class="media-links">
 											<div class="team-member-social">
-												<a class="social-icon soc-facebook theme-icon" href="#" title="Facebook"></a>
-												<a class="social-icon soc-twitter theme-icon" href="#" title="Twitter"></a>
-												<a class="social-icon soc-google theme-icon" href="#" title="Google"></a>
-												<a class="social-icon soc-youtube theme-icon" href="#" title="Youtube"></a>
+												<a class="social-icon soc-facebook theme-icon" href="#"
+													title="Facebook"></a>
+												<a class="social-icon soc-twitter theme-icon" href="#"
+													title="Twitter"></a>
+												<a class="social-icon soc-google theme-icon" href="#"
+													title="Google"></a>
+												<a class="social-icon soc-youtube theme-icon" href="#"
+													title="Youtube"></a>
 											</div>
 										</div>
 									</div>
@@ -1352,13 +1462,17 @@
 
 								<div class="vertical-item content-absolute team-item">
 									<div class="item-media">
-										<img src="images/team/05.jpg" alt="">
+										<img src="{% static 'images/team/05.jpg' %}" alt="">
 										<div class="media-links">
 											<div class="team-member-social">
-												<a class="social-icon soc-facebook theme-icon" href="#" title="Facebook"></a>
-												<a class="social-icon soc-twitter theme-icon" href="#" title="Twitter"></a>
-												<a class="social-icon soc-google theme-icon" href="#" title="Google"></a>
-												<a class="social-icon soc-youtube theme-icon" href="#" title="Youtube"></a>
+												<a class="social-icon soc-facebook theme-icon" href="#"
+													title="Facebook"></a>
+												<a class="social-icon soc-twitter theme-icon" href="#"
+													title="Twitter"></a>
+												<a class="social-icon soc-google theme-icon" href="#"
+													title="Google"></a>
+												<a class="social-icon soc-youtube theme-icon" href="#"
+													title="Youtube"></a>
 											</div>
 										</div>
 									</div>
@@ -1376,13 +1490,17 @@
 
 								<div class="vertical-item content-absolute team-item">
 									<div class="item-media">
-										<img src="images/team/06.jpg" alt="">
+										<img src="{% static 'images/team/06.jpg' %}" alt="">
 										<div class="media-links">
 											<div class="team-member-social">
-												<a class="social-icon soc-facebook theme-icon" href="#" title="Facebook"></a>
-												<a class="social-icon soc-twitter theme-icon" href="#" title="Twitter"></a>
-												<a class="social-icon soc-google theme-icon" href="#" title="Google"></a>
-												<a class="social-icon soc-youtube theme-icon" href="#" title="Youtube"></a>
+												<a class="social-icon soc-facebook theme-icon" href="#"
+													title="Facebook"></a>
+												<a class="social-icon soc-twitter theme-icon" href="#"
+													title="Twitter"></a>
+												<a class="social-icon soc-google theme-icon" href="#"
+													title="Google"></a>
+												<a class="social-icon soc-youtube theme-icon" href="#"
+													title="Youtube"></a>
 											</div>
 										</div>
 									</div>
@@ -1400,13 +1518,17 @@
 
 								<div class="vertical-item content-absolute team-item">
 									<div class="item-media">
-										<img src="images/team/01.jpg" alt="">
+										<img src="{% static 'images/team/01.jpg' %}" alt="">
 										<div class="media-links">
 											<div class="team-member-social">
-												<a class="social-icon soc-facebook theme-icon" href="#" title="Facebook"></a>
-												<a class="social-icon soc-twitter theme-icon" href="#" title="Twitter"></a>
-												<a class="social-icon soc-google theme-icon" href="#" title="Google"></a>
-												<a class="social-icon soc-youtube theme-icon" href="#" title="Youtube"></a>
+												<a class="social-icon soc-facebook theme-icon" href="#"
+													title="Facebook"></a>
+												<a class="social-icon soc-twitter theme-icon" href="#"
+													title="Twitter"></a>
+												<a class="social-icon soc-google theme-icon" href="#"
+													title="Google"></a>
+												<a class="social-icon soc-youtube theme-icon" href="#"
+													title="Youtube"></a>
 											</div>
 										</div>
 									</div>
@@ -1436,7 +1558,7 @@
 						<div class="col-md-4 col-md-push-4 text-center display_table_cell_md">
 							<a href="./" class="logo">
 								<div class="main_bg_color2">
-									<img src="images/logo.png" alt="">
+									<img src="{% static 'images/logo.png' %}" alt="">
 								</div>
 								<h1>Clinique</h1>
 							</a>
@@ -1446,7 +1568,8 @@
 						</div>
 						<div class="col-md-4 text-center text-md-right display_table_cell_md">
 							<p class="small-text grey margin_0">Created with
-								<i class="rt-icon2-heart highlight2"></i> by MWTemplates</p>
+								<i class="rt-icon2-heart highlight2"></i> by MWTemplates
+							</p>
 						</div>
 					</div>
 				</div>
@@ -1457,8 +1580,8 @@
 	</div>
 	<!-- eof #canvas -->
 
-	<script src="js/compressed.js"></script>
-	<script src="js/main.js"></script>
+	<script src="{% static 'js/compressed.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
 
 
 </body>
